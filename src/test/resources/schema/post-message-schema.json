@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "api_id": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "message_uuid": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "api_id",
+    "message",
+    "message_uuid"
+  ]
+}

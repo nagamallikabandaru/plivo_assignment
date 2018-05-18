@@ -1,0 +1,333 @@
+<html>
+<head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+table {border:1px solid black;border-collapse: collapse;}
+.chart {border:0px none black;border-collapse: collapse;background-color: none;}
+.passed {background-color:lightgreen;font-weight:bold;color:darkgreen}
+.skipped {background-color:silver;font-weight:bold;color:darkgray}
+.failed {background-color:tomato;font-weight:bold;color:darkred}
+.undefined {background-color:gold;font-weight:bold;color:goldenrod}
+.known {background-color:goldenrod;font-weight:bold;color:darkred}
+.passed_description {background-color:#D0FFD0;font-weight:bold;font-style:italic;color:black}
+.failed_description {background-color:#FFA898;font-weight:bold;font-style:italic;color:black}
+.comment {font-family:courier;font-weight:normal;font-size:small;color:black;border:1px dashed black;background-color:silver}
+.tip {font-family:courier;font-weight:normal;font-size:small;color:white;background-color:black}
+OL { counter-reset: item }
+OL>LI { display: block }
+OL>LI:before { content: counters(item, ".") " "; counter-increment: item }
+
+div.header {
+    display: block; text-align: center;
+    position: running(header);
+}
+div.footer {
+    display: block; text-align: center;
+    position: running(footer);
+}
+div.content {page-break-after: always;}
+@page {
+	 size: auto;
+     @top-center {
+     	content: "Detailed Results Report";
+	    color: silver;
+	    font-size: 14px;
+     }
+     @top-right {
+     	content: date("dd MMM, yyyy hh:mm");
+	    color: silver;
+	    font-size: 8px;
+     }
+    @bottom-right {
+    	content: "Page " counter(page) " of " counter(pages) ;
+	    color: silver;
+	    font-size: 8px;
+    }
+}
+</style>
+<title>Detailed Results Report</title>
+<meta charset="UTF-8" />
+</head>
+  <body>
+    <div class='header'></div>
+    <div class='footer'></div>
+<h1>Overview</h1>
+
+
+<table>
+	<tr><th></th><th>Passed</th><th>Failed</th><th>Known</th><th>Undefined</th><th>Total</th><th>%Passed</th></tr>
+	<tr><th>Features</th>
+		<td class="passed" id="features_passed">1</td>
+		<td class="failed" id="features_failed">0</td>
+		<td class="known" id="features_known">0</td>
+		<td class="undefined" id="features_undefined">0</td>
+		<td id="features_total">1</td>
+		<td id="features_rate">
+				100%
+		</td>
+	</tr>
+	<tr><th>Scenarios</th>
+		<td class="passed" id="scenarios_passed">1</td>
+		<td class="failed" id="scenarios_failed">0</td>
+		<td class="known" id="scenarios_known">0</td>
+		<td class="undefined" id="scenarios_undefined">0</td>
+		<td id="scenarios_total">1</td>
+		<td id="scenarios_rate">
+				100%
+		</td>
+	</tr>
+	<tr><th>Steps</th>
+		<td class="passed" id="steps_passed">29</td>
+		<td class="failed" id="steps_failed">0</td>
+		<td class="known" id="steps_known">0</td>
+		<td class="undefined" id="steps_undefined">0</td>
+		<td id="steps_total">29</td>
+		<td id="steps_rate">
+				100%
+		</td>
+	</tr>
+</table>
+<div><b>Overall Duration: 0h 01m 40s</b></div>
+
+<a id="top"></a><h1>Table of Contents</h1>
+
+<ol>
+<li> <span class="passed"><a href="#feature-1plivo-assignment---message-api">Plivo assignment - Message api</a></span>
+	<ol>
+        <li> <span class="passed"><a href="#sc-5-plivo-assignment---message-api;to-verify-the-cash-credit-for-a-particular-account">To verify the cash credit for a particular account</a></span></li>
+    </ol></li>
+</ol>
+
+<h1>Detailed Results Report</h1>
+
+<table width="700px">
+	<tr class="passed"><td colspan="4"><b>Feature:</b> <a id="feature-1plivo-assignment---message-api">Plivo assignment - Message api</a></td></tr>
+    <tr class="passed">
+    	<td><small><b>Passed:</b> 1</small></td>
+        <td><small><b>Failed:</b> 0</small></td>
+        <td><small><b>Undefined:</b> 0</small></td>
+        <td><small>Duration: 40.43s</small></td>
+    </tr>
+	<tr class="passed">
+		<td colspan="4" style="padding-left:20px">
+		<table width="100%">
+				<tr class="passed">
+					<td colspan="4">
+						<b>Scenario:</b> <a id="sc-5-plivo-assignment---message-api;to-verify-the-cash-credit-for-a-particular-account">To verify the cash credit for a particular account</a>
+					</td>
+				</tr>
+                <tr class="passed">
+                	<td><small><b>Passed:</b> 29</small></td>
+                	<td><small><b>Failed:</b> 0</small></td>
+					<td><small><b>Undefined:</b> 0</small></td>
+					<td><small>Duration: 40.43s</small></td>
+				</tr>
+					<tr class="passed">
+						<td>Before</td>
+						<td colspan="2"></td>
+						<td width="100">0.85s</td>
+					</tr>
+                	<tr class="passed">
+                		<td colspan="4">
+                		</td>
+                	</tr>
+                <tr class="passed">
+	                <td colspan="4" style="padding-left:20px">
+						<table width="100%">
+                            	<tr class="passed">
+                            		<td><b>Given </b> Basic auth</td>
+                            		<td width="100">0.36s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> user hits &quot;/&quot; get api</td>
+                            		<td width="100">4.35s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> the status code is 200 else &quot;accounts api failed&quot;</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> get the cash_credits from the response</td>
+                            		<td width="100">0.73s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> store the resp value</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Given </b> Basic auth</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Request params</td>
+                            		<td width="100">0.07s</td>
+                        		</tr>
+	 								<tr class="passed">
+	 									<td style="padding-left:20px" colspan="2">
+	 										<table>
+	 											<tr>
+	 													<td>key</td>
+	 													<td>value</td>
+												</tr>
+	 											<tr>
+	 													<td>limit</td>
+	 													<td>2</td>
+												</tr>
+            								</table>
+        								</td>
+    								</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> user hits &quot;/Number&quot; get api</td>
+                            		<td width="100">2.31s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> the status code is 200 else &quot;get account numbers failed&quot;</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> objects response length should be 2</td>
+                            		<td width="100">0.17s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Given </b> Basic auth</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Request body as json</td>
+                            		<td width="100">0.98s</td>
+                        		</tr>
+	 								<tr class="passed">
+	 									<td style="padding-left:20px" colspan="2">
+	 										<table>
+	 											<tr>
+	 													<td>key</td>
+	 													<td>value</td>
+												</tr>
+	 											<tr>
+	 													<td>jsonFileName</td>
+	 													<td>post-message.json</td>
+												</tr>
+	 											<tr>
+	 													<td>src</td>
+	 													<td>response:objects[0].number</td>
+												</tr>
+	 											<tr>
+	 													<td>dst</td>
+	 													<td>response:objects[1].number</td>
+												</tr>
+	 											<tr>
+	 													<td>text</td>
+	 													<td>assignment text for message api</td>
+												</tr>
+            								</table>
+        								</td>
+    								</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> user hits &quot;/Message/&quot; post api</td>
+                            		<td width="100">2.05s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> the status code is 202 else &quot;message api failed&quot;</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Returned json schema is &quot;post-message-schema.json&quot;</td>
+                            		<td width="100">1.13s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> get the message_uuid[0] from the response</td>
+                            		<td width="100">0.01s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Given </b> Basic auth</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> user hits &quot;/Message&quot; get api with id &quot;response&quot;</td>
+                            		<td width="100">2.13s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> the status code is 200 else &quot;details api failed&quot;</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> get the total_rate from the response</td>
+                            		<td width="100">0.03s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Given </b> Basic auth</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Request params</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+	 								<tr class="passed">
+	 									<td style="padding-left:20px" colspan="2">
+	 										<table>
+	 											<tr>
+	 													<td>key</td>
+	 													<td>value</td>
+												</tr>
+	 											<tr>
+	 													<td>country_iso</td>
+	 													<td>US</td>
+												</tr>
+            								</table>
+        								</td>
+    								</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> user hits &quot;/Pricing&quot; get api</td>
+                            		<td width="100">2.35s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> the status code is 200 else &quot;Pricing api failed&quot;</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> Response should contain</td>
+                            		<td width="100">0.05s</td>
+                        		</tr>
+	 								<tr class="passed">
+	 									<td style="padding-left:20px" colspan="2">
+	 										<table>
+	 											<tr>
+	 													<td>key</td>
+	 													<td>value</td>
+												</tr>
+	 											<tr>
+	 													<td>message.outbound.rate</td>
+	 													<td>previousrespvalue</td>
+												</tr>
+            								</table>
+        								</td>
+    								</tr>
+                            	<tr class="passed">
+                            		<td><b>Given </b> Basic auth</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>When </b> user hits &quot;/&quot; get api</td>
+                            		<td width="100">1.85s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>Then </b> the status code is 200 else &quot;accounts api failed&quot;</td>
+                            		<td width="100">0.00s</td>
+                        		</tr>
+                            	<tr class="passed">
+                            		<td><b>And </b> verify the cash deducted is equal to &quot;cash_credits&quot;</td>
+                            		<td width="100">21.01s</td>
+                        		</tr>
+						</table>
+					</td>
+				</tr>
+				
+                <tr><td colspan="5"><sup><a href="#top">Back to Table of Contents</a></sup></td></tr>
+		</table>
+	</td></tr><tr><td colspan="5"></td></tr>
+</table>
+
+	</body>
+</html>
